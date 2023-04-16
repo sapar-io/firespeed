@@ -1,3 +1,3 @@
-## 1.0.6
+## 1.0.7
 
-Add detailed debug prints with query parameters
+Fix bug with null fetch one element
