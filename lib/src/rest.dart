@@ -28,7 +28,7 @@ class FRRest {
   }
 
   // * Fetch ONE Document and return MODEL
-  static Future<T> fetchModel<T>({
+  static Future<T?> fetchModel<T>({
     required DocumentReference ref,
     required T Function(Map<String, dynamic>) fromMap,
   }) async {
@@ -36,7 +36,7 @@ class FRRest {
       final snapshot = await ref.get();
       final data = snapshot.data();
       if (data == null) {
-        throw Exception('Document not found');
+        return null;
       }
       return fromMap(data as Map<String, dynamic>);
     } catch (e) {

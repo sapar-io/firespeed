@@ -1,3 +1,3 @@
-## 1.0.9
+## 1.1.0
 
-Fix small bug
+Fetch one element can return null
