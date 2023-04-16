@@ -1,7 +1,7 @@
 name: firespeed
 description: Speed up your CRUD operations with Firebase Firestore with Generic methods.
-version: 1.0.7
-homepage: sapar.io
+version: 1.0.8
+homepage: null
 repository: https://github.com/sapar-io/firespeed
 
 environment:

@@ -36,7 +36,7 @@ class FRRest {
       final snapshot = await ref.get();
       final data = snapshot.data();
       if (data == null) {
-        throw throw('Document not found');
+        throw('Document not found');
       }
       return fromMap(data as Map<String, dynamic>);
     } catch (e) {
